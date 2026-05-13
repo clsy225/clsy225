@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ros2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ros2-pi
+    network_mode: host
+    ipc: host
+    privileged: true
+    stdin_open: true
+    tty: true
+    environment:
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_X11_NO_MITSHM=1
+      - LIBGL_ALWAYS_SOFTWARE=1
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
+    volumes:
+      - ./app:/root/ws/src/app
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev:/dev
+    working_dir: /root/ws
+    command: bash -lc "source /opt/ros/humble/setup.bash && colcon build --symlink-install || true && exec bash"
