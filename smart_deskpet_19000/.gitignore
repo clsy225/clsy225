@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.pid
+*.wav
+*.mp3
+*.webm
+*.onnx
+*.rknn
+*.pth
+*.pt
+*.ckpt
+models/
+logs/
+cache/
