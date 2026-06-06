@@ -1,0 +1,7 @@
+smart_deskpet_19000/models/**/*.wav filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/**/*.rknn filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/**/*.pth filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/**/*.ckpt filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/**/*.rkllm filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/**/*.part filter=lfs diff=lfs merge=lfs -text
+smart_deskpet_19000/models/rkllm_parts/Qwen.rkllm.part* filter=lfs diff=lfs merge=lfs -text

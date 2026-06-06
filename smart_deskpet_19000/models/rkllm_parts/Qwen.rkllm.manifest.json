@@ -1,0 +1,9 @@
+﻿{
+    "restore_linux":  "cat Qwen.rkllm.part* \u003e Qwen.rkllm \u0026\u0026 sha256sum Qwen.rkllm",
+    "part_size_bytes":  99614720,
+    "sha256":  "a481430214635cfd8e8095087b366594c6b7467dde764a27817ea1535703edd3",
+    "source_path":  "/userdata/models/Qwen.rkllm",
+    "filename":  "Qwen.rkllm",
+    "size_bytes":  2169831500,
+    "part_count":  22
+}
