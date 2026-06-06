@@ -12,6 +12,8 @@ This folder contains the RK3588 `/userdata` dashboard code used by the smart des
 - `tts4.py`: legacy voice command assistant, sanitized to read `DEEPSEEK_API_KEY` from env
 - `tts5_web.py`: voiceprint web service
 - `emotion_camera.py`: emotion camera service
+- `userdata_services/`: visual services launched by the 19000 dashboard, including gesture, total tracking, face/head detection, mouse control, and legacy voice assistants
+- `openclaw_workspace_services/`: direct 8080/8083 launcher dependencies, including RKNN camera and Ningning integrated browser helpers
 
 ## Deploy
 
